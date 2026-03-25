@@ -23,8 +23,7 @@ pnpm-debug.log*
 # jetbrains setting folder
 .idea/
 
-# tina generated
-.tina/__generated__/
+# tina generated - keep in repo for TinaCloud
 
 # claude
 .claude/

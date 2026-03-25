@@ -1,0 +1,198 @@
+fragment SiteSettingsParts on SiteSettings {
+  __typename
+  phone
+  email
+  address {
+    __typename
+    street
+    cityCs
+    cityEn
+  }
+  companyName
+  siteUrl
+}
+
+fragment PageHomeParts on PageHome {
+  __typename
+  lang
+  seo {
+    __typename
+    title
+    description
+  }
+  hero {
+    __typename
+    badge
+    heading
+    subheading
+    subheadingAccent
+    description
+    ctaPrimary
+    ctaSecondary
+  }
+  badges {
+    __typename
+    value
+    label
+  }
+  services {
+    __typename
+    label
+    heading
+    description
+    items {
+      __typename
+      title
+      description
+      href
+      linkText
+    }
+  }
+  whyUs {
+    __typename
+    label
+    heading
+    items {
+      __typename
+      title
+      subtitle
+      icon
+    }
+  }
+  forWhom {
+    __typename
+    label
+    heading
+    description
+    items {
+      __typename
+      text
+    }
+    image
+  }
+  cta {
+    __typename
+    heading
+    description
+    buttons {
+      __typename
+      label
+      href
+      variant
+    }
+  }
+}
+
+fragment PageAboutParts on PageAbout {
+  __typename
+  lang
+  seo {
+    __typename
+    title
+    description
+  }
+  hero {
+    __typename
+    label
+    heading
+    headingAccent
+    description
+  }
+  story {
+    __typename
+    label
+    heading
+    paragraphs
+    image
+  }
+  values {
+    __typename
+    label
+    heading
+    items {
+      __typename
+      title
+      description
+    }
+  }
+  cta {
+    __typename
+    heading
+    description
+    buttons {
+      __typename
+      label
+      href
+      variant
+    }
+  }
+}
+
+fragment PageServicesParts on PageServices {
+  __typename
+  lang
+  seo {
+    __typename
+    title
+    description
+  }
+  hero {
+    __typename
+    label
+    heading
+    headingAccent
+    description
+  }
+  serviceDetails {
+    __typename
+    id
+    number
+    title
+    description
+    features
+    image
+    ctaText
+    ctaHref
+  }
+  cta {
+    __typename
+    heading
+    description
+    buttons {
+      __typename
+      label
+      href
+      variant
+    }
+  }
+}
+
+fragment PageContactParts on PageContact {
+  __typename
+  lang
+  seo {
+    __typename
+    title
+    description
+  }
+  hero {
+    __typename
+    label
+    heading
+    headingAccent
+    description
+  }
+  contactInfo {
+    __typename
+    heading
+    phone
+    email
+    location {
+      __typename
+      companyName
+      street
+      city
+    }
+  }
+  mapEmbedUrl
+}
