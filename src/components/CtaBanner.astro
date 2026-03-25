@@ -1,0 +1,46 @@
+---
+interface Props {
+  variant: 'accent' | 'gradient';
+  heading: string;
+  description: string;
+  buttons: Array<{ text: string; href: string; style: 'primary' | 'outline-white' }>;
+}
+
+const { variant, heading, description, buttons } = Astro.props;
+
+const sectionClass = variant === 'accent'
+  ? 'py-20 bg-accent'
+  : 'py-24 lg:py-32 hero-gradient relative overflow-hidden';
+---
+
+<section class={sectionClass}>
+  {variant === 'gradient' && (
+    <div class="absolute top-1/4 right-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl"></div>
+  )}
+  <div class:list={['max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center', variant === 'gradient' && 'relative']}>
+    {variant === 'gradient' && (
+      <span class="text-accent-light font-semibold text-sm uppercase tracking-wider">Kontakt</span>
+    )}
+    <h2 class:list={[
+      'text-3xl sm:text-4xl font-extrabold text-white mb-6',
+      variant === 'gradient' && 'lg:text-5xl mt-3',
+    ]}>
+      {heading}
+    </h2>
+    <p class:list={[
+      'text-lg max-w-2xl mx-auto',
+      variant === 'accent' ? 'text-white/80 mb-8' : 'text-white/60 mb-10',
+    ]}>
+      {description}
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      {buttons.map((btn) => (
+        btn.style === 'primary' ? (
+          <a href={btn.href} class="btn-primary">{btn.text}</a>
+        ) : (
+          <a href={btn.href} class="inline-flex items-center justify-center gap-2 bg-transparent border border-white text-white font-bold uppercase tracking-wider px-8 py-4 rounded-xl hover:bg-white/10 transition-all duration-300">{btn.text}</a>
+        )
+      ))}
+    </div>
+  </div>
+</section>

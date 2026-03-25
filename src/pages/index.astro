@@ -1,0 +1,97 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroVideo from '../components/HeroVideo.astro';
+import BadgesStrip from '../components/BadgesStrip.astro';
+import ServiceCard from '../components/ServiceCard.astro';
+import WhyUsItem from '../components/WhyUsItem.astro';
+import ForWhomSection from '../components/ForWhomSection.astro';
+import CtaBanner from '../components/CtaBanner.astro';
+
+import content from '../content/pages/cs/index.json';
+---
+
+<BaseLayout
+  title={content.seo.title}
+  description={content.seo.description}
+  lang="cs"
+  activePage="index"
+>
+  <HeroVideo
+    badge={content.hero.badge}
+    heading={content.hero.heading}
+    subheading={content.hero.subheading}
+    subheadingAccent={content.hero.subheadingAccent}
+    description={content.hero.description}
+    ctaPrimaryText={content.hero.ctaPrimary}
+    ctaPrimaryHref="/kontakt"
+    ctaSecondaryText={content.hero.ctaSecondary}
+    ctaSecondaryHref="tel:+420777868949"
+  />
+
+  <BadgesStrip badges={content.badges} />
+
+  <!-- Services Section -->
+  <section class="py-24 lg:py-32 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-accent font-semibold text-sm uppercase tracking-wider">{content.services.label}</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-primary mt-3 mb-6">
+          <span class="gradient-text">{content.services.heading}</span>
+        </h2>
+        <p class="text-muted leading-relaxed">{content.services.description}</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {content.services.items.map((service) => (
+          <ServiceCard
+            title={service.title}
+            description={service.description}
+            href={service.href}
+            linkText={service.linkText}
+          />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Us Section -->
+  <section class="py-24 lg:py-32 bg-surface">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-accent font-semibold text-sm uppercase tracking-wider">{content.whyUs.label}</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-primary mt-3 mb-6">
+          Proč spolupracovat<br class="hidden lg:block" /> s Car Balance
+          <span class="block mt-3"></span>
+        </h2>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+        {content.whyUs.items.map((item, i) => (
+          <WhyUsItem
+            icon={item.icon}
+            title={item.title}
+            subtitle={item.subtitle}
+            class={i === content.whyUs.items.length - 1 ? 'col-span-2 md:col-span-1' : ''}
+          />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <ForWhomSection
+    label={content.forWhom.label}
+    heading={content.forWhom.heading}
+    description={content.forWhom.description}
+    items={content.forWhom.items.map((item) => item.text)}
+    image={content.forWhom.image}
+  />
+
+  <CtaBanner
+    variant="gradient"
+    heading={content.cta.heading}
+    description={content.cta.description}
+    buttons={content.cta.buttons.map((btn) => ({
+      text: btn.label,
+      href: btn.href,
+      style: btn.variant === 'primary' ? 'primary' : 'outline-white',
+    }))}
+  />
+</BaseLayout>

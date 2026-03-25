@@ -1,0 +1,78 @@
+{
+  "lang": "en",
+  "seo": {
+    "title": "Services — Car Balance",
+    "description": "Express shipping, domestic and international transport, van delivery. Fast and reliable shipment delivery."
+  },
+  "hero": {
+    "label": "Our services",
+    "heading": "What we",
+    "headingAccent": "offer",
+    "description": "Complete transport solutions for businesses and individuals. From express shipments to international delivery."
+  },
+  "serviceDetails": [
+    {
+      "id": "express",
+      "number": "01",
+      "title": "Express shipping",
+      "description": "We ensure immediate pickup and delivery of your shipment in the shortest possible time. Ideal for urgent situations where every minute counts.",
+      "features": [
+        "Immediate shipment pickup",
+        "Delivery in the shortest possible time",
+        "Real-time shipment tracking"
+      ],
+      "image": "/img/foto_1.webp",
+      "ctaText": "Request a quote",
+      "ctaHref": "/en/contact"
+    },
+    {
+      "id": "domestic",
+      "number": "02",
+      "title": "Domestic transport",
+      "description": "Fast shipment delivery across the entire Czech Republic. Reliable delivery from point A to point B without unnecessary delays.",
+      "features": [
+        "Coverage across the entire Czech Republic",
+        "Flexible route planning",
+        "Reliable and vetted drivers"
+      ],
+      "image": "/img/foto_2.webp",
+      "ctaText": "Request a quote",
+      "ctaHref": "/en/contact"
+    },
+    {
+      "id": "international",
+      "number": "03",
+      "title": "International transport",
+      "description": "We provide shipment delivery across Europe with a focus on speed and flexibility. No borders, no compromises.",
+      "features": [
+        "Delivery across all of Europe",
+        "Focus on speed and flexibility",
+        "Customs and logistics support"
+      ],
+      "image": "/img/foto_3.webp",
+      "ctaText": "Request a quote",
+      "ctaHref": "/en/contact"
+    },
+    {
+      "id": "van",
+      "number": "04",
+      "title": "Van delivery",
+      "description": "The ideal solution for transporting smaller loads, urgent shipments, or goods that need to arrive without reloading.",
+      "features": [
+        "Transport of smaller loads and pallets",
+        "No reloading — door to door",
+        "Urgent shipments without waiting"
+      ],
+      "image": "/img/foto_4.webp",
+      "ctaText": "Request a quote",
+      "ctaHref": "/en/contact"
+    }
+  ],
+  "cta": {
+    "heading": "Need to ship a package?",
+    "description": "Contact us and together we will find the ideal solution.",
+    "buttons": [
+      { "label": "Contact us", "href": "/en/contact", "variant": "primary" }
+    ]
+  }
+}

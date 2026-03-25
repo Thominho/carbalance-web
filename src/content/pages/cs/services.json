@@ -1,0 +1,78 @@
+{
+  "lang": "cs",
+  "seo": {
+    "title": "Služby — Car Balance",
+    "description": "Expresní přeprava, vnitrostátní a mezinárodní doprava, dodávková logistika. Rychlá a spolehlivá přeprava zásilek."
+  },
+  "hero": {
+    "label": "Naše služby",
+    "heading": "Co vám",
+    "headingAccent": "nabízíme",
+    "description": "Kompletní přepravní řešení pro firmy i jednotlivce. Od expresních zásilek po mezinárodní dopravu."
+  },
+  "serviceDetails": [
+    {
+      "id": "expresni",
+      "number": "01",
+      "title": "Expresní přeprava",
+      "description": "Zajistíme okamžitý odvoz zásilky a její doručení v co nejkratším čase. Ideální pro urgentní situace, kdy každá minuta počítá.",
+      "features": [
+        "Okamžitý odvoz zásilky",
+        "Doručení v co nejkratším čase",
+        "Sledování zásilky v reálném čase"
+      ],
+      "image": "/img/foto_1.webp",
+      "ctaText": "Poptat přepravu",
+      "ctaHref": "/kontakt"
+    },
+    {
+      "id": "vnitrostatni",
+      "number": "02",
+      "title": "Vnitrostátní doprava",
+      "description": "Rychlá přeprava zásilek po celé České republice. Spolehlivé doručení z bodu A do bodu B bez zbytečných prodlev.",
+      "features": [
+        "Pokrytí celé ČR",
+        "Flexibilní plánování tras",
+        "Spolehliví a prověření řidiči"
+      ],
+      "image": "/img/foto_2.webp",
+      "ctaText": "Poptat přepravu",
+      "ctaHref": "/kontakt"
+    },
+    {
+      "id": "mezinarodni",
+      "number": "03",
+      "title": "Mezinárodní přeprava",
+      "description": "Zajišťujeme dopravu zásilek v rámci Evropy s důrazem na rychlost a flexibilitu. Bez hranic, bez kompromisů.",
+      "features": [
+        "Doprava po celé Evropě",
+        "Důraz na rychlost a flexibilitu",
+        "Celní a logistická podpora"
+      ],
+      "image": "/img/foto_3.webp",
+      "ctaText": "Poptat přepravu",
+      "ctaHref": "/kontakt"
+    },
+    {
+      "id": "dodavkova",
+      "number": "04",
+      "title": "Dodávková doprava",
+      "description": "Ideální řešení pro přepravu menších nákladů, urgentních zásilek nebo zboží, které musí dorazit bez překládání.",
+      "features": [
+        "Přeprava menších nákladů a palet",
+        "Bez překládání — door to door",
+        "Urgentní zásilky bez čekání"
+      ],
+      "image": "/img/foto_4.webp",
+      "ctaText": "Poptat přepravu",
+      "ctaHref": "/kontakt"
+    }
+  ],
+  "cta": {
+    "heading": "Potřebujete přepravit zásilku?",
+    "description": "Kontaktujte nás a společně najdeme ideální řešení.",
+    "buttons": [
+      { "label": "Kontaktujte nás", "href": "/kontakt", "variant": "primary" }
+    ]
+  }
+}

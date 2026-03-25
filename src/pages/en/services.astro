@@ -1,0 +1,54 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import HeroGradient from '../../components/HeroGradient.astro';
+import ServiceDetail from '../../components/ServiceDetail.astro';
+import CtaBanner from '../../components/CtaBanner.astro';
+
+import content from '../../content/pages/en/services.json';
+---
+
+<BaseLayout
+  title={content.seo.title}
+  description={content.seo.description}
+  lang="en"
+  activePage="services"
+>
+  <HeroGradient
+    label={content.hero.label}
+    title={`${content.hero.heading} ${content.hero.headingAccent}`}
+    titleAccent={content.hero.headingAccent}
+    description={content.hero.description}
+  />
+
+  <!-- Services Detail Section -->
+  <section class="py-24 lg:py-32 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {content.serviceDetails.map((service, i) => (
+        <div class={i < content.serviceDetails.length - 1 ? 'mb-24 lg:mb-32' : ''}>
+          <ServiceDetail
+            id={service.id}
+            number={service.number}
+            title={service.title}
+            description={service.description}
+            features={service.features}
+            image={service.image}
+            ctaText={service.ctaText}
+            ctaHref={service.ctaHref}
+            reverse={i % 2 !== 0}
+          />
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <CtaBanner
+    variant="accent"
+    heading={content.cta.heading}
+    description={content.cta.description}
+    buttons={content.cta.buttons.map((btn) => ({
+      text: btn.label,
+      href: btn.href,
+      style: btn.variant === 'primary' ? 'primary' : 'outline-white',
+    }))}
+  />
+</BaseLayout>

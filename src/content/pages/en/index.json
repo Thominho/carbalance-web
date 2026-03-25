@@ -1,0 +1,104 @@
+{
+  "lang": "en",
+  "seo": {
+    "title": "Car Balance — Express Shipment Delivery across CZ and Europe",
+    "description": "Car Balance provides fast and reliable van delivery for businesses and individuals. Express shipping, urgent shipments, flexible logistics."
+  },
+  "hero": {
+    "badge": "Express shipping across CZ and Europe",
+    "heading": "Car Balance",
+    "subheading": "express shipment delivery across CZ and Europe",
+    "subheadingAccent": "shipment delivery",
+    "description": "We provide fast and reliable van delivery for businesses and individuals. We specialize in express shipping, urgent shipments, and flexible logistics.",
+    "ctaPrimary": "Request a quote",
+    "ctaSecondary": "+420 777 868 949"
+  },
+  "badges": [
+    { "value": "Express", "label": "shipping" },
+    { "value": "CZ + EU", "label": "domestic & international" },
+    { "value": "Van", "label": "delivery" },
+    { "value": "24/7", "label": "fast response" }
+  ],
+  "services": {
+    "label": "Our services",
+    "heading": "Tailored transport solutions",
+    "description": "We help businesses handle situations where goods need to be delivered quickly, safely, and without unnecessary delays.",
+    "items": [
+      {
+        "title": "Express shipping",
+        "description": "We ensure immediate pickup and delivery of your shipment in the shortest possible time.",
+        "href": "/en/services#express",
+        "linkText": "Learn more"
+      },
+      {
+        "title": "Domestic transport",
+        "description": "Fast shipment delivery across the entire Czech Republic.",
+        "href": "/en/services#domestic",
+        "linkText": "Learn more"
+      },
+      {
+        "title": "International transport",
+        "description": "We provide shipment delivery across Europe with a focus on speed and flexibility.",
+        "href": "/en/services#international",
+        "linkText": "Learn more"
+      },
+      {
+        "title": "Van delivery",
+        "description": "The ideal solution for transporting smaller loads, urgent shipments, or goods without reloading.",
+        "href": "/en/services#van",
+        "linkText": "Learn more"
+      }
+    ]
+  },
+  "whyUs": {
+    "label": "Why us",
+    "heading": "Why work with Car Balance",
+    "items": [
+      {
+        "title": "Fast response",
+        "subtitle": "to inquiries",
+        "icon": "/img/ikona-1.png"
+      },
+      {
+        "title": "Express solutions",
+        "subtitle": "for shipping",
+        "icon": "/img/ikona-2.png"
+      },
+      {
+        "title": "Flexibility",
+        "subtitle": "in route planning",
+        "icon": "/img/ikona-3.png"
+      },
+      {
+        "title": "Reliable drivers",
+        "subtitle": "vetted team",
+        "icon": "/img/ikona-4.png"
+      },
+      {
+        "title": "Individual approach",
+        "subtitle": "to every order",
+        "icon": "/img/ikona-5.png"
+      }
+    ]
+  },
+  "forWhom": {
+    "label": "For whom",
+    "heading": "Who our transport is for",
+    "description": "Our services are used by businesses and individuals who need reliable and fast shipping.",
+    "items": [
+      { "text": "Manufacturing companies" },
+      { "text": "Logistics companies" },
+      { "text": "E-shops" },
+      { "text": "Companies with urgent transport of materials or spare parts" }
+    ],
+    "image": "/img/foto_5.webp"
+  },
+  "cta": {
+    "heading": "Need to ship a package fast?",
+    "description": "Contact us and we will prepare a tailored solution.",
+    "buttons": [
+      { "label": "Request a quote", "href": "/en/contact", "variant": "primary" },
+      { "label": "+420 777 868 949", "href": "tel:+420777868949", "variant": "outline" }
+    ]
+  }
+}

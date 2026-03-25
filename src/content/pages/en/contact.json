@@ -1,0 +1,24 @@
+{
+  "lang": "en",
+  "seo": {
+    "title": "Contact — Car Balance",
+    "description": "Contact Car Balance — express shipment delivery across the Czech Republic and Europe. Headquartered in Prague, Old Town."
+  },
+  "hero": {
+    "label": "Contact",
+    "heading": "Let's",
+    "headingAccent": "work together",
+    "description": "Need to ship a package fast? Write to us or call — we will prepare a tailored solution."
+  },
+  "contactInfo": {
+    "heading": "Contact details",
+    "phone": "+420 777 868 949",
+    "email": "transport@carbalance.cz",
+    "location": {
+      "companyName": "Car Balance",
+      "street": "Rybna 716/24",
+      "city": "110 00 Prague — Old Town"
+    }
+  },
+  "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.902!2d14.4254!3d50.0900!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94ea1b5b0d0d%3A0x400af0f66164090!2sRybn%C3%A1%20716%2F24%2C%20110%2000%20Star%C3%A9%20M%C4%9Bsto!5e0!3m2!1sen!2scz!4v1"
+}

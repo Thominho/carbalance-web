@@ -1,0 +1,11 @@
+{
+  "phone": "+420 777 868 949",
+  "email": "transport@carbalance.cz",
+  "address": {
+    "street": "Rybná 716/24",
+    "cityCs": "110 00 Praha — Staré Město",
+    "cityEn": "110 00 Prague — Old Town"
+  },
+  "companyName": "Car Balance",
+  "siteUrl": "https://www.carbalance.cz"
+}

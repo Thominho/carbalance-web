@@ -1,0 +1,49 @@
+{
+  "lang": "cs",
+  "seo": {
+    "title": "O nás — Car Balance",
+    "description": "Car Balance je dopravní společnost zaměřená na rychlou a flexibilní přepravu zásilek po ČR i Evropě."
+  },
+  "hero": {
+    "label": "O nás",
+    "heading": "Kdo stojí za",
+    "headingAccent": "Car Balance",
+    "description": "Jsme dopravní společnost zaměřená na rychlou a flexibilní přepravu zásilek. Pomáháme firmám doručit zboží rychle, bezpečně a bez zbytečných prodlev."
+  },
+  "story": {
+    "label": "Náš příběh",
+    "heading": "Rychlost a spolehlivost na prvním místě",
+    "paragraphs": [
+      "Car Balance je dopravní společnost zaměřená na rychlou a flexibilní přepravu zásilek.",
+      "Pomáháme firmám řešit situace, kdy je potřeba doručit zboží rychle, bezpečně a bez zbytečných prodlev.",
+      "Zajišťujeme expresní přepravu zásilek, vnitrostátní i mezinárodní dopravu, přepravu menších nákladů a palet a flexibilní řešení podle potřeb zákazníka.",
+      "Naší prioritou je rychlost, spolehlivost a profesionální komunikace."
+    ],
+    "image": "/img/foto_5.webp"
+  },
+  "values": {
+    "label": "Naše hodnoty",
+    "heading": "Na čem stavíme",
+    "items": [
+      {
+        "title": "Rychlost",
+        "description": "Expresní reakce na poptávku a co nejrychlejší doručení vaší zásilky."
+      },
+      {
+        "title": "Spolehlivost",
+        "description": "Prověření řidiči a garantovaná bezpečnost vašeho zboží po celou cestu."
+      },
+      {
+        "title": "Flexibilita",
+        "description": "Individuální přístup ke každé zakázce a přizpůsobení vašim potřebám."
+      }
+    ]
+  },
+  "cta": {
+    "heading": "Potřebujete rychle přepravit zásilku?",
+    "description": "Kontaktujte nás a připravíme řešení na míru.",
+    "buttons": [
+      { "label": "Kontaktujte nás", "href": "/kontakt", "variant": "primary" }
+    ]
+  }
+}

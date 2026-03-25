@@ -1,0 +1,16 @@
+---
+interface Props {
+  icon: string;
+  title: string;
+  subtitle: string;
+  class?: string;
+}
+
+const { icon, title, subtitle, class: className = '' } = Astro.props;
+---
+
+<div class:list={['text-center', className]}>
+  <img src={icon} alt={title} class="w-14 h-14 mx-auto mb-4" />
+  <h3 class="font-bold text-primary text-sm mb-1">{title}</h3>
+  <p class="text-muted text-xs">{subtitle}</p>
+</div>

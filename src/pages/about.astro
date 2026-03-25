@@ -1,0 +1,69 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroGradient from '../components/HeroGradient.astro';
+import ValueCard from '../components/ValueCard.astro';
+import CtaBanner from '../components/CtaBanner.astro';
+
+import content from '../content/pages/cs/about.json';
+---
+
+<BaseLayout
+  title={content.seo.title}
+  description={content.seo.description}
+  lang="cs"
+  activePage="about"
+>
+  <HeroGradient
+    label={content.hero.label}
+    title={`${content.hero.heading} ${content.hero.headingAccent}`}
+    titleAccent={content.hero.headingAccent}
+    description={content.hero.description}
+  />
+
+  <!-- Story Section -->
+  <section class="py-24 lg:py-32 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <span class="text-accent font-semibold text-sm uppercase tracking-wider">{content.story.label}</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-primary mt-3 mb-6">{content.story.heading}</h2>
+          {content.story.paragraphs.map((paragraph) => (
+            <p class="text-muted leading-relaxed mb-4">{paragraph}</p>
+          ))}
+        </div>
+        <div class="relative">
+          <img src={content.story.image} alt={content.story.heading} class="rounded-2xl shadow-2xl w-full" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values Section -->
+  <section class="py-24 lg:py-32 bg-surface">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-accent font-semibold text-sm uppercase tracking-wider">{content.values.label}</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-primary mt-3 mb-6">{content.values.heading}</h2>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {content.values.items.map((value) => (
+          <ValueCard
+            title={value.title}
+            description={value.description}
+          />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <CtaBanner
+    variant="accent"
+    heading={content.cta.heading}
+    description={content.cta.description}
+    buttons={content.cta.buttons.map((btn) => ({
+      text: btn.label,
+      href: btn.href,
+      style: btn.variant === 'primary' ? 'primary' : 'outline-white',
+    }))}
+  />
+</BaseLayout>

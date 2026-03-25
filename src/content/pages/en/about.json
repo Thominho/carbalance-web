@@ -1,0 +1,49 @@
+{
+  "lang": "en",
+  "seo": {
+    "title": "About — Car Balance",
+    "description": "Car Balance is a transport company focused on fast and flexible shipment delivery across the Czech Republic and Europe."
+  },
+  "hero": {
+    "label": "About us",
+    "heading": "Who is behind",
+    "headingAccent": "Car Balance",
+    "description": "We are a transport company focused on fast and flexible shipment delivery. We help businesses deliver goods quickly, safely, and without unnecessary delays."
+  },
+  "story": {
+    "label": "Our story",
+    "heading": "Speed and reliability come first",
+    "paragraphs": [
+      "Car Balance is a transport company focused on fast and flexible shipment delivery.",
+      "We help businesses handle situations where goods need to be delivered quickly, safely, and without unnecessary delays.",
+      "We provide express shipping, domestic and international transport, delivery of smaller loads and pallets, and flexible solutions tailored to customer needs.",
+      "Our priority is speed, reliability, and professional communication."
+    ],
+    "image": "/img/foto_5.webp"
+  },
+  "values": {
+    "label": "Our values",
+    "heading": "What we stand for",
+    "items": [
+      {
+        "title": "Speed",
+        "description": "Express response to inquiries and the fastest possible delivery of your shipment."
+      },
+      {
+        "title": "Reliability",
+        "description": "Vetted drivers and guaranteed safety of your goods throughout the entire journey."
+      },
+      {
+        "title": "Flexibility",
+        "description": "Individual approach to every order and adaptation to your needs."
+      }
+    ]
+  },
+  "cta": {
+    "heading": "Need to ship a package fast?",
+    "description": "Contact us and we will prepare a tailored solution.",
+    "buttons": [
+      { "label": "Contact us", "href": "/en/contact", "variant": "primary" }
+    ]
+  }
+}

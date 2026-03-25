@@ -1,0 +1,79 @@
+---
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+  ogImage?: string;
+  lang?: 'cs' | 'en';
+  activePage?: 'index' | 'about' | 'services' | 'contact';
+  canonicalUrl?: string;
+  alternateUrl?: string;
+}
+
+const {
+  title,
+  description,
+  ogImage = '/img/foto_5.webp',
+  lang = 'cs',
+  activePage,
+  canonicalUrl,
+  alternateUrl,
+} = Astro.props;
+
+const ogLocale = lang === 'cs' ? 'cs_CZ' : 'en_US';
+const baseUrl = 'https://www.carbalance.cz';
+const fullOgImage = ogImage.startsWith('http') ? ogImage : `${baseUrl}${ogImage}`;
+const csUrl = canonicalUrl && lang === 'cs' ? canonicalUrl : alternateUrl && lang === 'en' ? alternateUrl : undefined;
+const enUrl = canonicalUrl && lang === 'en' ? canonicalUrl : alternateUrl && lang === 'cs' ? alternateUrl : undefined;
+---
+
+<!DOCTYPE html>
+<html lang={lang} class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Car Balance" />
+    <meta name="theme-color" content="#23272f" />
+
+    {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
+    {csUrl && <link rel="alternate" hreflang="cs" href={csUrl} />}
+    {enUrl && <link rel="alternate" hreflang="en" href={enUrl} />}
+    {alternateUrl && lang === 'cs' && <link rel="alternate" hreflang="en" href={alternateUrl} />}
+    {alternateUrl && lang === 'en' && <link rel="alternate" hreflang="cs" href={alternateUrl} />}
+    {canonicalUrl && lang === 'cs' && <link rel="alternate" hreflang="cs" href={canonicalUrl} />}
+    {canonicalUrl && lang === 'en' && <link rel="alternate" hreflang="en" href={canonicalUrl} />}
+
+    <link rel="icon" type="image/png" href="/img/favicon.png" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    {canonicalUrl && <meta property="og:url" content={canonicalUrl} />}
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={fullOgImage} />
+    <meta property="og:locale" content={ogLocale} />
+    <meta property="og:site_name" content="Car Balance" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={fullOgImage} />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body class="bg-white text-primary antialiased font-sans">
+    <Navbar lang={lang} activePage={activePage} />
+    <slot />
+    <Footer lang={lang} />
+</body>
+</html>

@@ -1,0 +1,28 @@
+---
+interface Props {
+  label: string;
+  title: string;
+  titleAccent: string;
+  description: string;
+}
+
+const { label, title, titleAccent, description } = Astro.props;
+
+// Split title around the accent portion
+const accentIndex = title.indexOf(titleAccent);
+const beforeAccent = accentIndex >= 0 ? title.slice(0, accentIndex) : title;
+const afterAccent = accentIndex >= 0 ? title.slice(accentIndex + titleAccent.length) : '';
+---
+
+<section class="hero-gradient pt-32 pb-20 lg:pt-40 lg:pb-28 relative overflow-hidden">
+  <div class="absolute top-1/4 right-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl"></div>
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-3xl">
+      <span class="text-accent font-semibold text-sm uppercase tracking-wider">{label}</span>
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mt-3 mb-6 leading-tight">
+        {beforeAccent}<span class="gradient-text">{titleAccent}</span>{afterAccent}
+      </h1>
+      <p class="text-white/60 text-lg lg:text-xl leading-relaxed max-w-2xl">{description}</p>
+    </div>
+  </div>
+</section>

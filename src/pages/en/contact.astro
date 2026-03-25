@@ -1,0 +1,54 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import HeroGradient from '../../components/HeroGradient.astro';
+import ContactCard from '../../components/ContactCard.astro';
+import MapEmbed from '../../components/MapEmbed.astro';
+
+import content from '../../content/pages/en/contact.json';
+---
+
+<BaseLayout
+  title={content.seo.title}
+  description={content.seo.description}
+  lang="en"
+  activePage="contact"
+>
+  <HeroGradient
+    label={content.hero.label}
+    title={`${content.hero.heading} ${content.hero.headingAccent}`}
+    titleAccent={content.hero.headingAccent}
+    description={content.hero.description}
+  />
+
+  <!-- Contact Section -->
+  <section class="py-24 lg:py-32 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-primary mb-12">{content.contactInfo.heading}</h2>
+      <div class="grid lg:grid-cols-2 gap-12">
+        <div>
+          <ContactCard
+            title="Phone"
+            icon="phone"
+            content={content.contactInfo.phone}
+            href={`tel:${content.contactInfo.phone.replace(/\s/g, '')}`}
+          />
+          <ContactCard
+            title="E-mail"
+            icon="email"
+            content={content.contactInfo.email}
+            href={`mailto:${content.contactInfo.email}`}
+          />
+          <ContactCard
+            title="Address"
+            icon="location"
+            content={`${content.contactInfo.location.street}<br>${content.contactInfo.location.city}`}
+            detail={content.contactInfo.location.companyName}
+          />
+        </div>
+        <div>
+          <MapEmbed url={content.mapEmbedUrl} />
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

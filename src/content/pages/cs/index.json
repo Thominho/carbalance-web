@@ -1,0 +1,104 @@
+{
+  "lang": "cs",
+  "seo": {
+    "title": "Car Balance — Expresní přeprava zásilek po ČR i Evropě",
+    "description": "Car Balance zajišťuje rychlou a spolehlivou dodávkovou dopravu pro firmy i jednotlivce. Expresní přeprava, urgentní zásilky, flexibilní logistika."
+  },
+  "hero": {
+    "badge": "Když to musí jet hned.",
+    "heading": "Car Balance",
+    "subheading": "expresní přeprava zásilek po ČR i Evropě",
+    "subheadingAccent": "přeprava zásilek",
+    "description": "Zajišťujeme rychlou a spolehlivou dodávkovou dopravu pro firmy i jednotlivce. Specializujeme se na expresní přepravu, urgentní zásilky a flexibilní logistiku.",
+    "ctaPrimary": "Poptat přepravu",
+    "ctaSecondary": "Zavolat hned"
+  },
+  "badges": [
+    { "value": "Expresní", "label": "přeprava" },
+    { "value": "ČR + EU", "label": "vnitrostátní i mezinárodní" },
+    { "value": "Dodávky", "label": "logistika" },
+    { "value": "24/7", "label": "rychlá reakce" }
+  ],
+  "services": {
+    "label": "Naše služby",
+    "heading": "Přepravní řešení na míru",
+    "description": "Pomáháme firmám řešit situace, kdy je potřeba doručit zboží rychle, bezpečně a bez zbytečných prodlev.",
+    "items": [
+      {
+        "title": "Expresní přeprava",
+        "description": "Zajistíme okamžitý odvoz zásilky a její doručení v co nejkratším čase.",
+        "href": "/sluzby#expresni",
+        "linkText": "Více info"
+      },
+      {
+        "title": "Vnitrostátní doprava",
+        "description": "Rychlá přeprava zásilek po celé České republice.",
+        "href": "/sluzby#vnitrostatni",
+        "linkText": "Více info"
+      },
+      {
+        "title": "Mezinárodní přeprava",
+        "description": "Zajišťujeme dopravu zásilek v rámci Evropy s důrazem na rychlost a flexibilitu.",
+        "href": "/sluzby#mezinarodni",
+        "linkText": "Více info"
+      },
+      {
+        "title": "Dodávková doprava",
+        "description": "Ideální řešení pro přepravu menších nákladů, urgentních zásilek nebo zboží bez překládání.",
+        "href": "/sluzby#dodavkova",
+        "linkText": "Více info"
+      }
+    ]
+  },
+  "whyUs": {
+    "label": "Proč my",
+    "heading": "Proč spolupracovat s Car Balance",
+    "items": [
+      {
+        "title": "Rychlá reakce",
+        "subtitle": "na poptávku",
+        "icon": "/img/ikona-1.png"
+      },
+      {
+        "title": "Expresní řešení",
+        "subtitle": "přepravy",
+        "icon": "/img/ikona-2.png"
+      },
+      {
+        "title": "Flexibilita",
+        "subtitle": "při plánování tras",
+        "icon": "/img/ikona-3.png"
+      },
+      {
+        "title": "Spolehliví řidiči",
+        "subtitle": "prověřený tým",
+        "icon": "/img/ikona-4.png"
+      },
+      {
+        "title": "Individuální přístup",
+        "subtitle": "ke každé zakázce",
+        "icon": "/img/ikona-5.png"
+      }
+    ]
+  },
+  "forWhom": {
+    "label": "Pro koho",
+    "heading": "Pro koho je naše doprava",
+    "description": "Naše služby využívají firmy i jednotlivci, kteří potřebují spolehlivou a rychlou přepravu.",
+    "items": [
+      { "text": "Výrobní firmy" },
+      { "text": "Logistické společnosti" },
+      { "text": "E-shopy" },
+      { "text": "Firmy s urgentní přepravou materiálu nebo náhradních dílů" }
+    ],
+    "image": "/img/foto_5.webp"
+  },
+  "cta": {
+    "heading": "Potřebujete rychle přepravit zásilku?",
+    "description": "Kontaktujte nás a připravíme řešení na míru.",
+    "buttons": [
+      { "label": "Poptat přepravu", "href": "/kontakt", "variant": "primary" },
+      { "label": "Zavolat hned", "href": "tel:+420777868949", "variant": "outline" }
+    ]
+  }
+}
